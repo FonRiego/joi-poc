@@ -1,0 +1,64 @@
+body {
+  background-color:ghostwhite;
+  box-sizing: border-box;
+  padding: 60px;
+}
+
+button {
+  width: auto;
+  margin: 8px;
+  padding: 0 16px;
+  height: 36px;
+  background-color: cornflowerblue;
+  color: white;
+  font-size: 16px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+button.active {
+  background-color: blue;
+}
+
+.display {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.display article {
+  width: 48%;
+  margin: 60px 0;
+}
+
+.display article h2 {
+  margin: 0 auto;
+  color: blue;
+}
+
+.response, .validator {
+  min-height: 60px;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #dfebf2;
+  border-radius: 3px;
+  border: 2px solid cornflowerblue;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.result {
+  width: 100%;
+  margin: 60px 0;
+  font-size: 28px;
+}
+
+.result.passed {
+  color: green
+}
+
+.result.failed{
+  color: red;
+}
